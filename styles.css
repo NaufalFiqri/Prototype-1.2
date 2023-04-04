@@ -275,22 +275,26 @@ header{
     
 }
 
+
 /* WORLD SECTION */
 
 #world {
   background-color: #1e90ff;
   color: #fff;
   padding: 60px 0;
+  height: 100vh;
 }
 
 .world-h2 {
-  font-size: 36px;
+  font-size: 48px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .world-p {
   font-size: 20px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .world-link--list {
@@ -324,6 +328,7 @@ header{
 .world-link a:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .world-button {
@@ -339,6 +344,86 @@ header{
   margin-top: 20px;
 }
 
-.explore-button:hover {
+.world-button:hover {
   background-color: darkblue;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
+
+
+/* WEATHER MAP SECTION */
+
+#weather-map {
+    background-color: white;
+    color: #00a4ef;
+    padding: 40px 0;
+    height: 100vh;
+  }
+  
+  .weather-map--title {
+    text-align: center;
+    font-size: 56px;
+  }
+  
+  .weather-map--subtitle{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .weather-map--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  /* news section */
+
+#news {
+    background-color: #00a4ef;
+    color: white;
+    padding: 50px 0;
+  }
+  
+  .news-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .news-p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .news a {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #00A4EF;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: 300ms;
+  }
+  
+  .news a:hover {
+    background-color: #0066CC;
+  }
+  
+
+  /* FOOTER */
+
+  #footer{
+    background-color: darkblue;
+  }
