@@ -46,14 +46,12 @@ li {
 }
 
 nav {
-  max-width: 1600px;
   margin: 0 auto;
 }
 
 header {
   height: calc(100vh- 100px);
   padding: 80px 32px;
-  max-width: 1600px;
   margin: 0 auto;
   width: 100%;
 }
