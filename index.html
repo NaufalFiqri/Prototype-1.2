@@ -1,57 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SkySavvy: Weather Forecast</title>
     <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-    <header>
-		<h1>SkySavvy</h1>
-	</header>
-    <section>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__container">
+        <h1>SkySavvy</h1>
+      <ul class="nav__link--list">
+        <li class="nav__link">
+          <a
+            href="#"
+            class="nav__link--anchor link__hover-effect link__hover-effect--purple"
+            >Climate</a
+          >
+        </li>
+        <li class="nav__link">
+          <a
+            href="#"
+            class="nav__link--anchor link__hover-effect link__hover-effect--purple"
+            >Service</a
+          >
+        </li>
+        <li class="nav__link">
+          <a
+            href="#"
+            class="nav__link--anchor link__hover-effect link__hover-effect--purple"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a href="#" class="nav__link--anchor nav__link--anchor-primary"
+            >Open Maps</a
+          >
+        </li>
+      </ul>
+      </div>
+    </nav>
+    <header id="search">
+      <div class="container">
+        <div class="search-h2">
+          <h2>Provide you a world</h2>
+          <h2>wide wather forecast</h2>
+        </div>
         <div class="search-container">
-          <div class="search-bar">
-            <h2>Search for a location</h2>
-            <form>
-              <label for="search">Enter a location:</label>
-              <input class= "search-input" type="text" id="search" name="search" placeholder="e.g. London">
-              <button class= "search-button" type="submit">Search</button>
+          <div class="search-bar--wrapper">
+            <form class="search-bar">
+              <input
+                class="search-input"
+                type="text"
+                id="search"
+                name="search"
+                placeholder="Search Place"
+              />
+              <button class="search-button" type="submit">Search</button>
             </form>
           </div>
           <div class="recent-searches">
-            <h2>Recent Searches</h2>
-            <ul>
-              <li>Paris</li>
-              <li>Tokyo</li>
-              <li>New York</li>
+            <h2 class="search__link--title">Recent Searches</h2>
+            <ul class="search__link--list">
+              <li class="search__link-first">
+                <span class="search__name">Tokyo</span>
+                <span class="search__temperature">24°C</span>
+                <span class="search__weather-status">Sunny</span>
+              </li>
+              <li class="search__link-second">
+                <span class="search__name">London</span>
+                <span class="search__temperature">18°C</span>
+                <span class="search__weather-status">Rainy</span>
+              </li>
+              <li class="search__link-third">
+                <span class="search__name">Brisbane</span>
+                <span class="search__temperature">12°C</span>
+                <span class="search__weather-status">Cloudy</span>
+              </li>
             </ul>
           </div>
         </div>
-      </section>
-		<section>
-			<h2>World Weather Forecast</h2>
-			<p>Select a country to see the current weather:</p>
-			<ul>
-				<li><a href="https://www.skysavvy.com/weather/uk">United Kingdom</a></li>
-				<li><a href="https://www.skysavvy.com/weather/us">United States</a></li>
-				<li><a href="https://www.skysavvy.com/weather/france">France</a></li>
-				<li><a href="https://www.skysavvy.com/weather/japan">Japan</a></li>
-			</ul>
-		</section>
-		<section>
-			<h2>Weather Map</h2>
-			<p>Interactive map coming soon!</p>
-		</section>
-		<section>
-			<h2>Weather News</h2>
-			<p>Stay up-to-date with the latest weather news from around the world.</p>
-			<a href="https://www.skysavvy.com/news">Read more</a>
-		</section>
-	<footer>
-		<p>&copy; 2023 SkySavvy. All rights reserved.</p>
-	</footer>
-</body>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h2>World Weather Forecast</h2>
+        <p>Select a country to see the current weather:</p>
+        <ul>
+          <li>
+            <a href="https://www.skysavvy.com/weather/uk">United Kingdom</a>
+          </li>
+          <li>
+            <a href="https://www.skysavvy.com/weather/us">United States</a>
+          </li>
+          <li><a href="https://www.skysavvy.com/weather/france">France</a></li>
+          <li><a href="https://www.skysavvy.com/weather/japan">Japan</a></li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>Weather Map</h2>
+        <p>Interactive map coming soon!</p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>Weather News</h2>
+        <p>
+          Stay up-to-date with the latest weather news from around the world.
+        </p>
+        <a href="https://www.skysavvy.com/news">Read more</a>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2023 SkySavvy. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
